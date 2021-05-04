@@ -157,10 +157,14 @@ a {
 @media only screen and (max-width: 600px) {
   .text1, .text2, .text3 {
     text-align: center;
-    color: black;
+    color: #111;
   }
   .text1 {
     padding-top: 250px;
+  }
+  .text4 {
+    padding-top: 75%;
+    font-weight: 600;
   }
   .nav-list {
     display: none;
