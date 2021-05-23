@@ -69,6 +69,7 @@ a {
 
 .projects-section-header {
   color: white;
+  font-size: 30px;
   max-width: 640px;
   margin: 0 auto 6rem auto;
   border-bottom: 0.2rem solid white;
