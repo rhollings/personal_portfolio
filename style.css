@@ -62,6 +62,13 @@ a {
   opacity: 0.9;
 }
 
+.image {
+  height: 100%;
+  width: 71%;
+  background-size: contain;
+  border: ghostwhite solid 2px;
+}
+
 .projects-section {
   text-align: center;
   padding: 10rem 2rem;
@@ -74,6 +81,7 @@ a {
   max-width: 640px;
   margin: 0 auto 6rem auto;
   border-bottom: 0.2rem solid white;
+  text-align: center;
 }
 
 .projects-grid {
@@ -96,6 +104,21 @@ a {
   .projects-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.werk {
+  background: #1a1a1a;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+}
+
+.crate {
+  margin-left: 7rem;
 }
 
 .project {
@@ -150,10 +173,22 @@ a {
 }
 
 .text4 {
-    text-align: right;
-    padding-right: 15px;
-    padding-top: 37%;
-    font-weight: 800;
+  text-align: right;
+  padding-right: 15px;
+  padding-top: 37%;
+  font-weight: 800;
+}
+
+.texth  {
+  text-align: center;
+  color: floralwhite;
+}
+
+.text5 {
+  text-align: center;
+  width: 60%;
+  color: floralwhite;
+  margin-top: 1rem;
 }
 
 @media only screen and (max-width: 600px) {
