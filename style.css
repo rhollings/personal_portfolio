@@ -196,20 +196,19 @@ a {
     text-align: center;
     color: #111;
   }
-  .text1 {
-    padding-top: 250px;
+  .text3 {
+    padding-top: 20px;
   }
   .text4 {
-    padding-top: 75%;
-    font-weight: 600;
+    display: none;
   }
   .nav-list {
     display: none;
   }
   .bg {
-    background-size: contain;
-    background-repeat: repeat;
-    height: 85vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25vh;
   }
 }
 
