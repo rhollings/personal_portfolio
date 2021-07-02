@@ -122,18 +122,18 @@ a {
 }
 
 .project {
-  background: lightblue;
+  background: rgb(232, 249, 255);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
 
 .code {
-  color: lightblue;
+  color: #e6ffff;
   transition: color 0.3s ease-out;
 }
 
 .project:hover .code {
-  color: #460ad1;
+  color: #111;
 }
 
 .project-image {
