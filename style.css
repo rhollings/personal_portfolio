@@ -28,17 +28,16 @@
 
 .nav-list a {
   display: block;
-  color: #e6ffff;
+  color: #ffffff;
   background-color: #1f1f1f;
-  padding: 0.8rem;
+  padding: 0.8rem 2rem 0.8rem 2rem;
   margin-top: 1rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   transition: 400ms;
 }
 
 .nav-list a:hover {
   transform: scale(1.07);
-  color: rgb(250, 243, 245);
 }
 
 .nav-list {
@@ -55,14 +54,13 @@ a {
 }
 
 /* MAIN  */
-
+.back {
+  background-color: rgb(46, 51, 56);
+}
 .bg {
-  background-image: url("https://i.pinimg.com/originals/c6/f5/3e/c6f53ecf1ab7becf9cff7e8e240e5cc7.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 89vh;
   opacity: 0.9;
 }
 
@@ -71,6 +69,38 @@ a {
   width: 71%;
   background-size: contain;
   border: ghostwhite solid 2px;
+}
+
+.scroll {
+  color: #ffffff;
+  height: 9vh;
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, -12px, 0);
+  }
+}
+
+.bounce {
+  animation: bounce 0.6s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.split{
+  height: 1rem;
+  background-image: linear-gradient(rgb(46, 51, 56), #1a1a1a);
 }
 
 /* Projects Section */
@@ -165,25 +195,19 @@ a {
 }
 
 .text1 {
-  padding-top: 7%;
+  color: #ffffff;
+  padding-top: 17%;
   padding-left: 7%;
-}
-
-.text2 {
-  padding-top: 0.5%;
-  padding-left: 9%;
+  font-size: 80px;
+  font-weight: 400;
 }
 
 .text3 {
+  color: #ffffff;
   padding-top: 0.5%;
-  padding-left: 10%;
-}
-
-.text4 {
-  text-align: right;
-  padding-right: 15px;
-  padding-top: 37%;
-  font-weight: 800;
+  padding-left: 12%;
+  font-size: 50px;
+  font-weight: 300;
 }
 
 .texth  {
@@ -235,7 +259,7 @@ a {
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 90vh;
+  height: 95vh;
   padding: 0 2rem;
   background: #1a1a1a;
 }
@@ -274,14 +298,30 @@ a {
   transform: translateY(6px);
 }
 
+.wave {
+  color: #fff;
+  font-size: 60px;
+  animation: wave 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wave {
+  from {
+    transform: rotate(30deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+
 footer {
-  font-weight: 300;
   color: white;
   display: flex;
   justify-content: space-evenly;
-  padding: 2rem;
+  padding: 0;
   background: #111;
-  border-top: 4px solid skyblue;
+  border-top: 2px solid skyblue;
 }
 
 footer > p {
