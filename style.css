@@ -299,7 +299,7 @@ a {
 .contact-details {
   font-size: 1.6rem;
   color: #111;
-  text-shadow: 2px 2px 1px #ade8f4;
+  /* text-shadow: 2px 2px 1px #ade8f4; */
   transition: transform 0.3s ease-out;
 }
 
