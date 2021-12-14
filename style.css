@@ -115,9 +115,14 @@ a {
   color: #fff;
   font-size: 30px;
   max-width: 640px;
-  margin: 0 auto 6rem auto;
+  margin: 0 auto 0rem auto;
   border-bottom: 0.2rem solid white;
   text-align: center;
+}
+
+.projects-secondary {
+  color: #fff;
+  margin-bottom: 6em;
 }
 
 .projects-grid {
