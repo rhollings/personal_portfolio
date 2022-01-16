@@ -108,28 +108,30 @@ a {
 .projects-section {
   text-align: center;
   padding: 10rem 2rem;
-  background: #111;
+  background: #f8f9fa;
+}
+
+.projects-section-header, .projects-secondary {
+  color: #111;
 }
 
 .projects-section-header {
-  color: #fff;
   font-size: 30px;
   max-width: 640px;
   margin: 0 auto 0rem auto;
-  border-bottom: 0.2rem solid white;
+  border-bottom: 0.2rem solid black;
   text-align: center;
 }
 
 .projects-secondary {
-  color: #fff;
   margin-bottom: 6em;
 }
 
 .projects-grid {
   display: grid;
   /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 380px 355px 320px;
+  grid-template-columns: auto auto;
+  grid-template-rows: 350px 350px 350px 350px 350px;
   grid-gap: 2.5rem;
   width: 100%;
   max-width: 1280px;
@@ -137,21 +139,7 @@ a {
   margin-bottom: 5rem;
 }
 
-@media only screen and (max-width: 600px) {
-  .projects-section {
-    padding: 6rem 1rem;
-  }
-
-  .projects-grid {
-    grid-template-columns: auto;
-    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
-  }
-}
-
-.werk {
-  background: #1a1a1a;
-}
-
+/*
 .container {
   display: grid;
   grid-template-columns: auto auto;
@@ -162,10 +150,28 @@ a {
 .crate {
   margin-left: 7rem;
 }
+*/
 
 .project {
+  display: grid;
   background: #fff;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  grid-template-columns: 60% 40%;
+  transition: ease-in-out 0.5s;
+}
+
+.project-text {
+  display: grid;
+  grid-template-rows: 30% 40% 13% 13%;
+}
+
+.project-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 1rem;
+  color: black;
+  background-color: #fff;
   border-radius: 10px;
 }
 
@@ -178,28 +184,47 @@ a {
   color: #111;
 }
 
+.project-desc {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6rem;
+  padding: .3rem;
+}
+
 .project-image {
-  height: 90%;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 5px;
 }
 
-.project-tile {
-    transition: 0.5s ease-in-out;
+.git-link {
+  color: #111;
+  font-size: 2rem;
+  text-align: right;
+  margin-right: 1rem;
 }
 
-.project-tile:hover {
-    transform: scale(1.03);
-    box-shadow: 6px 21px 18px #888888;
+.tools {
+  font-size: 2rem;
 }
 
-.project-title {
-  font-size: 1.5rem;
-  padding: 5px;
-  color: black;
-  background-color: #fff;
-  border-radius: 10px;
+/* <= Smaller than iPad*/
+@media only screen and (max-width: 750px) { 
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: auto;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
+  }
+}
+
+@media only screen and (max-width: 505px) {
+  .project {
+    display: flex;
+  }
 }
 
 .text1 {
@@ -229,6 +254,7 @@ a {
   color: floralwhite;
   margin-top: 1rem;
 }
+
 
 @media only screen and (max-width: 600px) {
   .text1, .text2, .text3 {
@@ -268,7 +294,7 @@ a {
 
 .contact-section {
   display: flex;
-  color: #fff;
+  color: #111;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -276,7 +302,7 @@ a {
   width: 100%;
   height: 95vh;
   padding: 0 2rem;
-  background: #111;
+  background: #f8f9fa;
 }
 
 .contact-section-header > h2 {
@@ -304,8 +330,8 @@ a {
 
 .contact-details {
   font-size: 1.6rem;
-  color: #fff;
-  text-shadow: 2px 2px 1px #495057;
+  color: #495057;
+  text-shadow: 2px 2px 1px #fff;
   transition: transform 0.3s ease-out;
 }
 
@@ -314,7 +340,7 @@ a {
 }
 
 .wave {
-  color: #fff;
+  color: #111;
   font-size: 60px;
   animation: wave 1s;
   animation-direction: alternate;
